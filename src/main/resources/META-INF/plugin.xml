@@ -7,7 +7,7 @@
         Scrolls the editor showing the file selected in a project tree without moving the focus
         out of the tree, so a file can be browsed with the keyboard while the arrow keys keep
         walking the tree. Works with preview tabs and regularly opened files in IntelliJ Platform-based
-        JetBrains IDEs. Verification to date covers the build and packaged actions on Rider 2026.3 for macOS.
+        JetBrains IDEs starting with the 2026.3 release.
     ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
