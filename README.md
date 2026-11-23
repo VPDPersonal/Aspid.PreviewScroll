@@ -1,6 +1,6 @@
 <picture>
   <source srcset="docs/images/banner.webp" type="image/webp" />
-  <img src="docs/images/banner.png" alt="Aspid.Preview.Scroll — Keyboard scrolling from the project tree" width="100%" />
+  <img src="docs/images/banner.png" alt="Aspid.PreviewScroll — Keyboard scrolling from the project tree" width="100%" />
 </picture>
 
 [![Plugin for JetBrains IDEs](docs/images/platform.svg)](#compatibility)
@@ -8,7 +8,7 @@
 
 When you browse files with the arrow keys in the **Project** tool window (**Explorer** in Rider), a file may be longer than the editor window, or a line may run past its right edge. If you switch to the editor to scroll, you then have to switch back to the tree to select the next file.
 
-**Aspid.Preview.Scroll** lets you scroll the selected file vertically or horizontally while keyboard focus stays in the tree. When you’ve seen enough, press **↓** to preview the next file.
+**Aspid.PreviewScroll** lets you scroll the selected file vertically or horizontally while keyboard focus stays in the tree. When you’ve seen enough, press **↓** to preview the next file.
 
 ## Compatibility
 
@@ -18,8 +18,8 @@ Designed for JetBrains IDEs built on the IntelliJ Platform. Verification so far 
 
 The first release is pending. Once published, you can install the plugin either way:
 
-- **[JetBrains Marketplace](https://plugins.jetbrains.com/search?search=Aspid.Preview.Scroll)** — open **Settings → Plugins → Marketplace**, search for **Aspid.Preview.Scroll**, and select **Install**.
-- **[GitHub Releases](https://github.com/VPDPersonal/Aspid.Preview.Scroll/releases)** — download the plugin ZIP from the release assets. Open **Settings → Plugins → ⚙ → Install Plugin from Disk…** and select the ZIP.
+- **[JetBrains Marketplace](https://plugins.jetbrains.com/search?search=Aspid.PreviewScroll)** — open **Settings → Plugins → Marketplace**, search for **Aspid.PreviewScroll**, and select **Install**.
+- **[GitHub Releases](https://github.com/VPDPersonal/Aspid.PreviewScroll/releases)** — download the plugin ZIP from the release assets. Open **Settings → Plugins → ⚙ → Install Plugin from Disk…** and select the ZIP.
 
 ## Shortcuts
 
@@ -36,18 +36,18 @@ The first release is pending. Once published, you can install the plugin either 
 > Select a file in the project tree and use **Show Source** to open it while keeping keyboard focus in the tree. The default shortcut is <kbd>⌘ Enter</kbd> on macOS and <kbd>Ctrl + Enter</kbd> on Windows.
 > To preview files automatically as you move through the tree, turn on **Enable Preview Tab** in the tree’s options menu.
 
-Rebind these actions in **Settings → Keymap → Plugins → Aspid.Preview.Scroll**.
+Rebind these actions in **Settings → Keymap → Plugins → Aspid.PreviewScroll**.
 
-Set **Vertical scroll step** and **Horizontal scroll step** in **Settings → Tools → Aspid.Preview.Scroll**. These values apply to all projects in the IDE. Apply a change to use it immediately.
+Set **Vertical scroll step** and **Horizontal scroll step** in **Settings → Tools → Aspid.PreviewScroll**. These values apply to all projects in the IDE. Apply a change to use it immediately.
 
 ## Issues and feedback
 
 When reporting a shortcut issue, include your IDE name and version, plugin version, OS, active keymap, and the project view where it happened.
 
-[**Open an issue**](https://github.com/VPDPersonal/Aspid.Preview.Scroll/issues)
+[**Open an issue**](https://github.com/VPDPersonal/Aspid.PreviewScroll/issues)
 
 ## Support the project
 
-If this plugin helps you browse code, [star it on GitHub](https://github.com/VPDPersonal/Aspid.Preview.Scroll) or support its development on Ko-fi.
+If this plugin helps you browse code, [star it on GitHub](https://github.com/VPDPersonal/Aspid.PreviewScroll) or support its development on Ko-fi.
 
 <a href="https://ko-fi.com/vpdaspid"><img src="https://vpdpersonal.github.io/VPDPersonal/support/kofi-button.svg#stacked" alt="Tip on Ko-fi" width="100%" height="48" /></a>

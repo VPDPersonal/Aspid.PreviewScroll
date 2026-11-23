@@ -1,6 +1,6 @@
 <idea-plugin require-restart="false">
-    <id>com.aspid.preview-scroll</id>
-    <name>Aspid.Preview.Scroll</name>
+    <id>com.aspid.previewscroll</id>
+    <name>Aspid.PreviewScroll</name>
     <vendor email="vpd.aspid@gmail.com">Vladislav Panin</vendor>
 
     <description><![CDATA[
@@ -16,7 +16,7 @@
         <applicationConfigurable parentId="tools"
                                  instance="com.aspid.previewscroll.PreviewScrollConfigurable"
                                  id="com.aspid.previewscroll.PreviewScrollConfigurable"
-                                 displayName="Aspid.Preview.Scroll"/>
+                                 displayName="Aspid.PreviewScroll"/>
     </extensions>
 
     <actions>
