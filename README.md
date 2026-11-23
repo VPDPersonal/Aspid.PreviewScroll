@@ -38,14 +38,14 @@ The first release is pending. Once published, you can install the plugin either 
 
 Rebind these actions in **Settings → Keymap → Plugins → Aspid.Preview.Scroll**.
 
-## Help and support
+## Issues and feedback
 
 When reporting a shortcut issue, include your IDE name and version, plugin version, OS, active keymap, and the project view where it happened.
 
-[**Open an issue**](https://github.com/VPDPersonal/Aspid.Preview.Scroll/issues) · [Star on GitHub](https://github.com/VPDPersonal/Aspid.Preview.Scroll)
+[**Open an issue**](https://github.com/VPDPersonal/Aspid.Preview.Scroll/issues)
 
 ## Support the project
 
-If this plugin makes browsing code easier, you can support its development on Ko-fi.
+If this plugin helps you browse code, [star it on GitHub](https://github.com/VPDPersonal/Aspid.Preview.Scroll) or support its development on Ko-fi.
 
 <a href="https://ko-fi.com/vpdaspid"><img src="https://vpdpersonal.github.io/VPDPersonal/support/kofi-button.svg#stacked" alt="Tip on Ko-fi" width="100%" height="48" /></a>
