@@ -43,27 +43,6 @@ The plugin uses the open editor for the selected file. If that file has no open 
 
 </details>
 
-## Development
-
-<details>
-<summary>Build and test your own changes</summary>
-
-Use **JDK 21** and a local Rider installation. Pass the Rider installation directory to Gradle (on macOS, use the app’s <code>Contents</code> directory).
-
-```sh
-./gradlew buildPlugin -PriderHome="/path/to/Rider.app/Contents"
-```
-
-On Windows, use <code>gradlew.bat</code> and the directory containing Rider’s <code>bin</code> folder. The ZIP is written to <code>build/distributions/</code>. To try the plugin in a sandboxed Rider instance, run the same command with <code>runIde</code> in place of <code>buildPlugin</code>.
-
-</details>
-
-## Resources
-
-| [Explorer and preview tabs](https://www.jetbrains.com/help/rider/Project_Tool_Window.html) | [Customize keyboard shortcuts](https://www.jetbrains.com/help/rider/Configuring_Keyboard_and_Mouse_Shortcuts.html) |
-| --- | --- |
-| Configure how Rider displays the selected file. | Find an action, change its keys, or check for conflicts. |
-
 ## Help and support
 
 When reporting a shortcut issue, include your Rider and plugin versions, OS, active keymap, and the Explorer view where it happened.
@@ -74,4 +53,4 @@ When reporting a shortcut issue, include your Rider and plugin versions, OS, act
 
 If this plugin makes browsing code easier, you can support its development on Ko-fi.
 
-<a href="https://ko-fi.com/vpdaspid"><picture><source media="(max-width: 640px)" srcset="https://vpdpersonal.github.io/VPDPersonal/support/kofi-button.svg#stacked" width="100%" height="48" /><img src="https://vpdpersonal.github.io/VPDPersonal/support/kofi-button.svg" alt="Tip on Ko-fi" width="50%" height="48" /></picture></a>
+<a href="https://ko-fi.com/vpdaspid"><img src="https://vpdpersonal.github.io/VPDPersonal/support/kofi-button.svg#stacked" alt="Tip on Ko-fi" width="100%" height="48" /></a>
