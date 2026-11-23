@@ -25,13 +25,14 @@ To preview files as you move through the tree, open the project tree’s options
 
 ## Shortcuts
 
-Hold **⌘ Command + ⌥ Option + ⇧ Shift** on macOS or **Ctrl + Alt** on Windows, then press a key from the table. On Windows, turn on **Num Lock**.
-
-| Direction | macOS | Windows | Scroll distance |
+| Direction | macOS | Windows (Num Lock on) | Scroll distance |
 | --- | --- | --- | --- |
-| Up / down | <kbd>↑</kbd> / <kbd>↓</kbd> | Numpad **8** / **2** | 3 lines |
-| Left / right | <kbd>←</kbd> / <kbd>→</kbd> | Numpad **4** / **6** | 3 space widths |
-| Page up / down | <kbd>Page Up</kbd> / <kbd>Page Down</kbd> | Numpad **9** / **3** | One screen, with one line of overlap |
+| Up | <kbd>⌘ ⌥ ⇧ ↑</kbd> | <kbd>Ctrl + Alt + Numpad 8</kbd> | 3 lines |
+| Down | <kbd>⌘ ⌥ ⇧ ↓</kbd> | <kbd>Ctrl + Alt + Numpad 2</kbd> | 3 lines |
+| Left | <kbd>⌘ ⌥ ⇧ ←</kbd> | <kbd>Ctrl + Alt + Numpad 4</kbd> | 3 space widths |
+| Right | <kbd>⌘ ⌥ ⇧ →</kbd> | <kbd>Ctrl + Alt + Numpad 6</kbd> | 3 space widths |
+| Page up | <kbd>⌘ ⌥ ⇧ Page Up</kbd> | <kbd>Ctrl + Alt + Numpad 9</kbd> | One screen, one line of overlap |
+| Page down | <kbd>⌘ ⌥ ⇧ Page Down</kbd> | <kbd>Ctrl + Alt + Numpad 3</kbd> | One screen, one line of overlap |
 
 <details>
 <summary>Change a shortcut or resolve a conflict</summary>
