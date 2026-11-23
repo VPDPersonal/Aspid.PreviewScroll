@@ -4,6 +4,7 @@ import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
+import com.intellij.openapi.components.service
 import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.editor.ex.util.EditorUtil
 import com.intellij.openapi.fileEditor.FileEditorManager
@@ -38,12 +39,12 @@ abstract class ScrollPreviewAction(private val unit: ScrollUnit, private val dir
         try {
             when (unit) {
                 ScrollUnit.COLUMN -> {
-                    val step = EditorUtil.getPlainSpaceWidth(editor) * COLUMNS_PER_STEP
-                    scrolling.scrollHorizontally((scrolling.horizontalScrollOffset + direction * step).coerceAtLeast(0))
+                    val target = getScrollTarget(scrolling.horizontalScrollOffset, EditorUtil.getPlainSpaceWidth(editor))
+                    scrolling.scrollHorizontally(target)
                 }
                 ScrollUnit.LINE -> {
-                    val step = editor.lineHeight * LINES_PER_STEP
-                    scrolling.scrollVertically((scrolling.verticalScrollOffset + direction * step).coerceAtLeast(0))
+                    val target = getScrollTarget(scrolling.verticalScrollOffset, editor.lineHeight)
+                    scrolling.scrollVertically(target)
                 }
                 ScrollUnit.PAGE -> {
                     val step = (scrolling.visibleArea.height - editor.lineHeight).coerceAtLeast(editor.lineHeight)
@@ -67,9 +68,9 @@ abstract class ScrollPreviewAction(private val unit: ScrollUnit, private val dir
         return editorForSelection ?: e.getData(CommonDataKeys.EDITOR) ?: editors.selectedTextEditor
     }
 
-    private companion object {
-        const val COLUMNS_PER_STEP = 3
-        const val LINES_PER_STEP = 3
+    private fun getScrollTarget(offset: Int, unitSize: Int): Int {
+        val step = unitSize.toLong() * service<PreviewScrollSettings>().scrollStep
+        return (offset + direction * step).coerceIn(0L, Int.MAX_VALUE.toLong()).toInt()
     }
 }
 
