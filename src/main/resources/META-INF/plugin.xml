@@ -12,6 +12,13 @@
 
     <depends>com.intellij.modules.platform</depends>
 
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable parentId="tools"
+                                 instance="com.aspid.previewscroll.PreviewScrollConfigurable"
+                                 id="com.aspid.previewscroll.PreviewScrollConfigurable"
+                                 displayName="Aspid.Preview.Scroll"/>
+    </extensions>
+
     <actions>
         <action id="com.aspid.previewscroll.ScrollDown"
                 class="com.aspid.previewscroll.ScrollPreviewDownAction"

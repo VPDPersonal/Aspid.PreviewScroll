@@ -27,7 +27,7 @@ The first release is pending. Once published, you can install the plugin either 
 
 ## Shortcuts
 
-| Action in Keymap | macOS | Windows | Scroll distance |
+| Action in Keymap | macOS | Windows | Default scroll distance |
 | --- | --- | --- | --- |
 | Scroll Preview Up | <kbd>⌘ ⌥ ⇧ ↑</kbd> | <kbd>Ctrl + Alt + Shift + ↑</kbd> | 3 lines |
 | Scroll Preview Down | <kbd>⌘ ⌥ ⇧ ↓</kbd> | <kbd>Ctrl + Alt + Shift + ↓</kbd> | 3 lines |
@@ -37,6 +37,8 @@ The first release is pending. Once published, you can install the plugin either 
 | Scroll Preview Page Down | <kbd>⌘ ⌥ ⇧ Page Down</kbd> | <kbd>Ctrl + Alt + Shift + Page Down</kbd> | One screen, one line of overlap |
 
 Rebind these actions in **Settings → Keymap → Plugins → Aspid.Preview.Scroll**.
+
+Set **Scroll step** in **Settings → Tools → Aspid.Preview.Scroll**. The value applies to all projects in the IDE and controls how many lines or space widths each arrow shortcut scrolls. Apply a change to use it immediately.
 
 ## Help and support
 
