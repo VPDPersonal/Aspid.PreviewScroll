@@ -12,7 +12,7 @@ When you browse files with the arrow keys in the **Project** tool window (**Expl
 
 ## Compatibility
 
-Designed for JetBrains IDEs built on the IntelliJ Platform. Verification so far is limited to **Rider 2026.3 on macOS**, where the plugin was built and its six packaged scroll actions were checked.
+Requires **2026.3** or later (IntelliJ Platform build **263**). Verified with **Rider 2026.3 on macOS**.
 
 ## Installation
 
