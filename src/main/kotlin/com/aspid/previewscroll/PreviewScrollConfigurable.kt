@@ -5,7 +5,7 @@ import com.intellij.openapi.options.BoundConfigurable
 import com.intellij.ui.dsl.builder.bindIntText
 import com.intellij.ui.dsl.builder.panel
 
-internal class PreviewScrollConfigurable : BoundConfigurable("Aspid.Preview.Scroll") {
+internal class PreviewScrollConfigurable : BoundConfigurable("Aspid.PreviewScroll") {
     override fun createPanel() = panel {
         val settings = service<PreviewScrollSettings>()
 
