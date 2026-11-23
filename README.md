@@ -4,7 +4,7 @@
 </picture>
 
 [![Plugin for JetBrains IDEs](https://vpdpersonal.github.io/VPDPersonal/badges/aspid-previewscroll/platform.svg)](#compatibility)
-[![Plugin version: 0.2.0](https://vpdpersonal.github.io/VPDPersonal/badges/aspid-previewscroll/version.svg)](build.gradle.kts)
+[![Plugin version: 0.2.0](https://vpdpersonal.github.io/VPDPersonal/badges/aspid-previewscroll/version.svg)](https://github.com/VPDPersonal/Aspid.PreviewScroll/releases/tag/v0.2.0)
 [![MIT License](https://vpdpersonal.github.io/VPDPersonal/badges/status-badge-license.svg)](LICENSE)
 
 When you browse files with the arrow keys in the **Project** tool window (**Explorer** in Rider), a file may be longer than the editor window, or a line may run past its right edge. If you switch to the editor to scroll, you then have to switch back to the tree to select the next file.
@@ -17,10 +17,9 @@ Requires **2026.3** or later (IntelliJ Platform build **263**). Verified with **
 
 ## Installation
 
-The first release is pending. Once published, you can install the plugin either way:
+Download the [Aspid.PreviewScroll 0.2.0 ZIP](https://github.com/VPDPersonal/Aspid.PreviewScroll/releases/download/v0.2.0/previewscroll-0.2.0.zip). In your IDE, open **Settings → Plugins → ⚙ → Install Plugin from Disk…** and select the ZIP.
 
-- **[JetBrains Marketplace](https://plugins.jetbrains.com/search?search=Aspid.PreviewScroll)** — open **Settings → Plugins → Marketplace**, search for **Aspid.PreviewScroll**, and select **Install**.
-- **[GitHub Releases](https://github.com/VPDPersonal/Aspid.PreviewScroll/releases)** — download the plugin ZIP from the release assets. Open **Settings → Plugins → ⚙ → Install Plugin from Disk…** and select the ZIP.
+The first release is under review on [JetBrains Marketplace](https://plugins.jetbrains.com/search?search=Aspid.PreviewScroll).
 
 ## Shortcuts
 
