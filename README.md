@@ -21,6 +21,12 @@ The first release is pending. Once published, you can install the plugin either 
 - **[JetBrains Marketplace](https://plugins.jetbrains.com/search?search=Aspid.PreviewScroll)** — open **Settings → Plugins → Marketplace**, search for **Aspid.PreviewScroll**, and select **Install**.
 - **[GitHub Releases](https://github.com/VPDPersonal/Aspid.PreviewScroll/releases)** — download the plugin ZIP from the release assets. Open **Settings → Plugins → ⚙ → Install Plugin from Disk…** and select the ZIP.
 
+## Build from source
+
+Set `JAVA_HOME` to a JDK 25 installation and run `./gradlew buildPlugin` on macOS or Linux, or `gradlew.bat buildPlugin` on Windows. Gradle downloads the Rider 2026.3 SDK on the first build and writes the plugin ZIP to `build/distributions/`.
+
+Run `./gradlew verifyPlugin` to check binary compatibility with the Rider version used for the build. To use a local Rider 2026.3 installation, add `-PriderHome="<path-to-Rider>"` to either command.
+
 ## Shortcuts
 
 | Action in Keymap | macOS | Windows | Default scroll distance |
