@@ -23,10 +23,6 @@ The first release is pending. Once published, you can install the plugin either 
 
 ## Shortcuts
 
-> [!TIP]
-> Select a file in the project tree and use **Show Source** to open it while keeping keyboard focus in the tree. The default shortcut is <kbd>⌘ Enter</kbd> on macOS and <kbd>Ctrl + Enter</kbd> on Windows.
-> To preview files automatically as you move through the tree, turn on **Enable Preview Tab** in the tree’s options menu.
-
 | Action in Keymap | macOS | Windows | Scroll distance |
 | --- | --- | --- | --- |
 | Scroll Preview Up | <kbd>⌘ ⌥ ⇧ ↑</kbd> | <kbd>Ctrl + Alt + Shift + ↑</kbd> | 3 lines |
@@ -35,6 +31,10 @@ The first release is pending. Once published, you can install the plugin either 
 | Scroll Preview Right | <kbd>⌘ ⌥ ⇧ →</kbd> | <kbd>Ctrl + Alt + Shift + →</kbd> | 3 space widths |
 | Scroll Preview Page Up | <kbd>⌘ ⌥ ⇧ Page Up</kbd> | <kbd>Ctrl + Alt + Shift + Page Up</kbd> | One screen, one line of overlap |
 | Scroll Preview Page Down | <kbd>⌘ ⌥ ⇧ Page Down</kbd> | <kbd>Ctrl + Alt + Shift + Page Down</kbd> | One screen, one line of overlap |
+
+> [!TIP]
+> Select a file in the project tree and use **Show Source** to open it while keeping keyboard focus in the tree. The default shortcut is <kbd>⌘ Enter</kbd> on macOS and <kbd>Ctrl + Enter</kbd> on Windows.
+> To preview files automatically as you move through the tree, turn on **Enable Preview Tab** in the tree’s options menu.
 
 Rebind these actions in **Settings → Keymap → Plugins → Aspid.Preview.Scroll**.
 
