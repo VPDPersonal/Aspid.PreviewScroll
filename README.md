@@ -1,10 +1,10 @@
 <picture>
-  <source srcset="docs/images/banner.webp" type="image/webp" />
-  <img src="docs/images/banner.png" alt="Aspid.PreviewScroll — Keyboard scrolling from the project tree" width="100%" />
+  <source srcset="https://vpdpersonal.github.io/VPDPersonal/banners/aspid-previewscroll/banner.webp" type="image/webp" />
+  <img src="https://vpdpersonal.github.io/VPDPersonal/banners/aspid-previewscroll/banner.png" alt="Aspid.PreviewScroll — Keyboard scrolling from the project tree" width="100%" />
 </picture>
 
-[![Plugin for JetBrains IDEs](docs/images/platform.svg)](#compatibility)
-[![Plugin version: 0.2.0](docs/images/version.svg)](build.gradle.kts)
+[![Plugin for JetBrains IDEs](https://vpdpersonal.github.io/VPDPersonal/badges/aspid-previewscroll/platform.svg)](#compatibility)
+[![Plugin version: 0.2.0](https://vpdpersonal.github.io/VPDPersonal/badges/aspid-previewscroll/version.svg)](build.gradle.kts)
 
 When you browse files with the arrow keys in the **Project** tool window (**Explorer** in Rider), a file may be longer than the editor window, or a line may run past its right edge. If you switch to the editor to scroll, you then have to switch back to the tree to select the next file.
 
