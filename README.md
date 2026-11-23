@@ -6,7 +6,9 @@
 [![IDE: JetBrains Rider](docs/images/rider.svg)](#installation)
 [![Plugin version: 0.2.0](docs/images/version.svg)](build.gradle.kts)
 
-Browse source files from Rider’s **Explorer** with your hands on the keyboard. Select a file, scroll through its code, then press **↓** to select the next file. Keyboard focus stays in the tree.
+When you browse files with the arrow keys in Rider’s **Explorer**, a file may be longer than the editor window, or a line may run past its right edge. If you switch to the editor to scroll, you then have to switch back to the tree to select the next file.
+
+**Aspid.Preview.Scroll** lets you scroll the selected file vertically or horizontally while keyboard focus stays in Explorer. When you’ve seen enough, press **↓** to preview the next file.
 
 ## Installation
 
