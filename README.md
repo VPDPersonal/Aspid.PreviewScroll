@@ -21,11 +21,11 @@ The first release is pending. Once published, you can install the plugin either 
 - **[JetBrains Marketplace](https://plugins.jetbrains.com/search?search=Aspid.Preview.Scroll)** — open **Settings → Plugins → Marketplace**, search for **Aspid.Preview.Scroll**, and select **Install**.
 - **[GitHub Releases](https://github.com/VPDPersonal/Aspid.Preview.Scroll/releases)** — download the plugin ZIP from the release assets. Open **Settings → Plugins → ⚙ → Install Plugin from Disk…** and select the ZIP.
 
-> [!TIP]
-> To preview each file as you move through the project tree, turn on **Enable Preview Tab** in the tree’s options menu.
-> If you prefer to open files on demand, leave that option off. In Rider’s default macOS keymap, select a file and press <kbd>⌘ Enter</kbd> (**Show Source**) to open it with keyboard focus still in the tree. The scroll shortcuts work in regular tabs too.
-
 ## Shortcuts
+
+> [!TIP]
+> Select a file in the project tree and use **Show Source** to open it while keeping keyboard focus in the tree. The default shortcut is <kbd>⌘ Enter</kbd> on macOS and <kbd>Ctrl + Enter</kbd> on Windows.
+> To preview files automatically as you move through the tree, turn on **Enable Preview Tab** in the tree’s options menu.
 
 | Action in Keymap | macOS | Windows | Scroll distance |
 | --- | --- | --- | --- |
