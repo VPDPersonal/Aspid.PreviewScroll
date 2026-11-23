@@ -1,40 +1,67 @@
-# Aspid.Preview.Scroll
+<picture>
+  <source srcset="docs/images/banner.webp" type="image/webp" />
+  <img src="docs/images/banner.png" alt="Aspid.Preview.Scroll — Keyboard scrolling from the Rider project tree" width="100%" />
+</picture>
 
-Scrolls the editor of the file selected in Rider's project trees without moving the keyboard
-focus out of the tree.
+[![IDE: JetBrains Rider](docs/images/rider.svg)](#installation)
+[![Plugin version: 0.2.0](docs/images/version.svg)](build.gradle.kts)
 
-With **Enable Preview Tab** turned on, select a file in the tree and scroll its preview.
-The shortcuts also work with regularly opened files.
+Browse source files from Rider’s **Explorer** with your hands on the keyboard. Select a file, scroll through its code, then press **↓** to select the next file. Keyboard focus stays in the tree.
+
+## Installation
+
+1. Build the plugin ZIP using the [build instructions](#build-from-source).
+2. In Rider, open **Settings → Plugins → ⚙ → Install Plugin from Disk…** and select the ZIP from `build/distributions/`.
+3. In **Explorer → ⋮ → Behavior**, turn on **Enable Preview Tab** to open a preview as you move between files. You can also scroll files that are already open in regular tabs.
 
 ## Shortcuts
 
-Hold **Command + Option + Shift** on macOS or **Ctrl + Alt** on Windows and press the key below.
-Windows shortcuts use the numeric keypad with Num Lock on.
+Hold **⌘ Command + ⌥ Option + ⇧ Shift** on macOS or **Ctrl + Alt** on Windows, then press a key from the table. On Windows, turn on **Num Lock**.
 
-| Scroll | macOS | Windows | Step |
-|---|---|---|---|
-| Up / Down | ↑ / ↓ | Numpad 8 / 2 | 3 lines |
-| Left / Right | ← / → | Numpad 4 / 6 | 3 space widths |
-| Page up / down | Page Up / Page Down | Numpad 9 / 3 | One screen with one line of overlap |
+| Direction | macOS | Windows | Scroll distance |
+| --- | --- | --- | --- |
+| Up / down | <kbd>↑</kbd> / <kbd>↓</kbd> | Numpad **8** / **2** | 3 lines |
+| Left / right | <kbd>←</kbd> / <kbd>→</kbd> | Numpad **4** / **6** | 3 space widths |
+| Page up / down | <kbd>Page Up</kbd> / <kbd>Page Down</kbd> | Numpad **9** / **3** | One screen, with one line of overlap |
 
-Rebind them in **Settings → Keymap → Plugins → Aspid.Preview.Scroll**.
+<details>
+<summary>Change a shortcut or resolve a conflict</summary>
 
-## How it works
+Open <b>Settings → Keymap → Plugins → Aspid.Preview.Scroll</b>. Right-click a scroll action and choose <b>Add Keyboard Shortcut</b>. Rider shows other actions using the same keys. You can also use this to choose keys on a keyboard without a numeric keypad.
 
-Each action resolves the editor for the tree's selected file through `FileEditorManager` and
-scrolls it with `ScrollingModel`, animation off. When the tree has no usable selection the action
-falls back to the focused editor and then to the currently selected one.
+</details>
 
-The actions stay enabled whenever a project is open, even with nothing to scroll, and consume
-their input event. A disabled action leaves its keystroke unconsumed; on macOS an unconsumed
-keystroke reaches the responder chain, which answers it with the system beep — the intermittent
-beep this plugin is meant to end.
+<details>
+<summary>Which editor scrolls?</summary>
 
-## Build
+The plugin uses the open editor for the selected file. If that file has no open text editor, it uses the focused editor, then the currently selected editor. The actions consume their keystrokes even when there is nothing to scroll, to avoid the macOS system beep.
 
-```bash
-JAVA_HOME=/path/to/jdk-21 ./gradlew buildPlugin   # -> build/distributions/*.zip
-JAVA_HOME=/path/to/jdk-21 ./gradlew runIde        # sandboxed Rider with the plugin
+</details>
+
+## Build from source
+
+Use **JDK 21** and a local Rider installation. Pass the Rider installation directory to Gradle (on macOS, use the app’s <code>Contents</code> directory).
+
+```sh
+./gradlew buildPlugin -PriderHome="/path/to/Rider.app/Contents"
 ```
 
-`gradle.properties` points `riderHome` at the local Rider installation the plugin is built against.
+On Windows, use <code>gradlew.bat</code> and the directory containing Rider’s <code>bin</code> folder. The ZIP is written to <code>build/distributions/</code>. To try the plugin in a sandboxed Rider instance, run the same command with <code>runIde</code> in place of <code>buildPlugin</code>.
+
+## Resources
+
+| [Explorer and preview tabs](https://www.jetbrains.com/help/rider/Project_Tool_Window.html) | [Customize keyboard shortcuts](https://www.jetbrains.com/help/rider/Configuring_Keyboard_and_Mouse_Shortcuts.html) |
+| --- | --- |
+| Configure how Rider displays the selected file. | Find an action, change its keys, or check for conflicts. |
+
+## Help and support
+
+When reporting a shortcut issue, include your Rider and plugin versions, OS, active keymap, and the Explorer view where it happened.
+
+[**Open an issue**](https://github.com/VPDPersonal/Aspid.Preview.Scroll/issues) · [Star on GitHub](https://github.com/VPDPersonal/Aspid.Preview.Scroll)
+
+## Support the project
+
+If this plugin makes browsing code easier, you can support its development on Ko-fi.
+
+<a href="https://ko-fi.com/vpdaspid"><picture><source media="(max-width: 640px)" srcset="https://vpdpersonal.github.io/VPDPersonal/support/kofi-button.svg#stacked" width="100%" height="48" /><img src="https://vpdpersonal.github.io/VPDPersonal/support/kofi-button.svg" alt="Tip on Ko-fi" width="50%" height="48" /></picture></a>
