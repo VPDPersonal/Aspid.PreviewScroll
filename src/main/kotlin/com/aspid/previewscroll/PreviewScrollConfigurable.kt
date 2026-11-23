@@ -9,10 +9,16 @@ internal class PreviewScrollConfigurable : BoundConfigurable("Aspid.Preview.Scro
     override fun createPanel() = panel {
         val settings = service<PreviewScrollSettings>()
 
-        row("Scroll step:") {
+        row("Vertical scroll step:") {
             intTextField(1..Int.MAX_VALUE)
                 .bindIntText(settings::scrollStep)
-                .comment("Lines vertically and space widths horizontally per shortcut press.")
+                .comment("Lines per shortcut press.")
+        }
+
+        row("Horizontal scroll step:") {
+            intTextField(1..Int.MAX_VALUE)
+                .bindIntText(settings::horizontalScrollStep)
+                .comment("Space widths per shortcut press.")
         }
     }
 }

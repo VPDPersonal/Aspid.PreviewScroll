@@ -39,11 +39,19 @@ abstract class ScrollPreviewAction(private val unit: ScrollUnit, private val dir
         try {
             when (unit) {
                 ScrollUnit.COLUMN -> {
-                    val target = getScrollTarget(scrolling.horizontalScrollOffset, EditorUtil.getPlainSpaceWidth(editor))
+                    val target = getScrollTarget(
+                        scrolling.horizontalScrollOffset,
+                        EditorUtil.getPlainSpaceWidth(editor),
+                        service<PreviewScrollSettings>().horizontalScrollStep,
+                    )
                     scrolling.scrollHorizontally(target)
                 }
                 ScrollUnit.LINE -> {
-                    val target = getScrollTarget(scrolling.verticalScrollOffset, editor.lineHeight)
+                    val target = getScrollTarget(
+                        scrolling.verticalScrollOffset,
+                        editor.lineHeight,
+                        service<PreviewScrollSettings>().scrollStep,
+                    )
                     scrolling.scrollVertically(target)
                 }
                 ScrollUnit.PAGE -> {
@@ -68,8 +76,8 @@ abstract class ScrollPreviewAction(private val unit: ScrollUnit, private val dir
         return editorForSelection ?: e.getData(CommonDataKeys.EDITOR) ?: editors.selectedTextEditor
     }
 
-    private fun getScrollTarget(offset: Int, unitSize: Int): Int {
-        val step = unitSize.toLong() * service<PreviewScrollSettings>().scrollStep
+    private fun getScrollTarget(offset: Int, unitSize: Int, unitCount: Int): Int {
+        val step = unitSize.toLong() * unitCount
         return (offset + direction * step).coerceIn(0L, Int.MAX_VALUE.toLong()).toInt()
     }
 }
