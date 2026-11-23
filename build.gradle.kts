@@ -16,7 +16,15 @@ repositories {
 
 dependencies {
     intellijPlatform {
-        local(providers.gradleProperty("riderHome"))
+        val riderHome = providers.gradleProperty("riderHome").orNull
+        if (riderHome == null) {
+            rider("2026.3") {
+                useInstaller = false
+            }
+            jetbrainsRuntime()
+        } else {
+            local(riderHome)
+        }
     }
 }
 
@@ -24,11 +32,22 @@ kotlin {
     jvmToolchain(25)
 }
 
+tasks.jar {
+    from(layout.projectDirectory.file("LICENSE")) {
+        into("META-INF")
+    }
+}
+
 intellijPlatform {
     pluginConfiguration {
         ideaVersion {
             sinceBuild = "263"
             untilBuild = provider { null }
+        }
+    }
+    pluginVerification {
+        ides {
+            current()
         }
     }
     instrumentCode = false

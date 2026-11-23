@@ -1,14 +1,20 @@
-<idea-plugin require-restart="false">
+<idea-plugin url="https://github.com/VPDPersonal/Aspid.PreviewScroll" require-restart="false">
     <id>com.aspid.previewscroll</id>
     <name>Aspid.PreviewScroll</name>
-    <vendor email="vpd.aspid@gmail.com">Vladislav Panin</vendor>
+    <vendor url="https://github.com/VPDPersonal" email="vpd.aspid@gmail.com">Vladislav Panin</vendor>
 
     <description><![CDATA[
-        Scrolls the editor showing the file selected in a project tree without moving the focus
-        out of the tree, so a file can be browsed with the keyboard while the arrow keys keep
-        walking the tree. Works with preview tabs and regularly opened files in IntelliJ Platform-based
-        JetBrains IDEs starting with the 2026.3 release.
+        <p>Scroll the selected file while your keyboard focus stays in the project tree.</p>
+        <p>Scroll by lines, columns, or pages in a preview or regular editor tab. Use the arrow keys
+        to move between files. Set the vertical and horizontal scroll steps under
+        Settings &gt; Tools &gt; Aspid.PreviewScroll.</p>
+        <p>Requires IntelliJ Platform 2026.3 or later.</p>
     ]]></description>
+
+    <change-notes><![CDATA[
+        <p>Initial release with vertical, horizontal, and page scrolling from the project tree.
+        The vertical and horizontal scroll steps can be configured independently.</p>
+    ]]></change-notes>
 
     <depends>com.intellij.modules.platform</depends>
 
