@@ -27,8 +27,8 @@ The first release is pending. Once published, you can install the plugin either 
 | --- | --- | --- | --- |
 | Scroll Preview Up | <kbd>⌘ ⌥ ⇧ ↑</kbd> | <kbd>Ctrl + Alt + Shift + ↑</kbd> | 3 lines |
 | Scroll Preview Down | <kbd>⌘ ⌥ ⇧ ↓</kbd> | <kbd>Ctrl + Alt + Shift + ↓</kbd> | 3 lines |
-| Scroll Preview Left | <kbd>⌘ ⌥ ⇧ ←</kbd> | <kbd>Ctrl + Alt + Shift + ←</kbd> | 3 space widths |
-| Scroll Preview Right | <kbd>⌘ ⌥ ⇧ →</kbd> | <kbd>Ctrl + Alt + Shift + →</kbd> | 3 space widths |
+| Scroll Preview Left | <kbd>⌘ ⌥ ⇧ ←</kbd> | <kbd>Ctrl + Alt + Shift + ←</kbd> | 10 space widths |
+| Scroll Preview Right | <kbd>⌘ ⌥ ⇧ →</kbd> | <kbd>Ctrl + Alt + Shift + →</kbd> | 10 space widths |
 | Scroll Preview Page Up | <kbd>⌘ ⌥ ⇧ Page Up</kbd> | <kbd>Ctrl + Alt + Shift + Page Up</kbd> | One screen, one line of overlap |
 | Scroll Preview Page Down | <kbd>⌘ ⌥ ⇧ Page Down</kbd> | <kbd>Ctrl + Alt + Shift + Page Down</kbd> | One screen, one line of overlap |
 
@@ -38,7 +38,7 @@ The first release is pending. Once published, you can install the plugin either 
 
 Rebind these actions in **Settings → Keymap → Plugins → Aspid.Preview.Scroll**.
 
-Set **Scroll step** in **Settings → Tools → Aspid.Preview.Scroll**. The value applies to all projects in the IDE and controls how many lines or space widths each arrow shortcut scrolls. Apply a change to use it immediately.
+Set **Vertical scroll step** and **Horizontal scroll step** in **Settings → Tools → Aspid.Preview.Scroll**. These values apply to all projects in the IDE. Apply a change to use it immediately.
 
 ## Issues and feedback
 

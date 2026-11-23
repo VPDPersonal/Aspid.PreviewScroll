@@ -21,11 +21,19 @@ internal class PreviewScrollSettings :
             state.scrollStep = value
         }
 
+    var horizontalScrollStep: Int
+        get() = state.horizontalScrollStep.takeIf { it > 0 } ?: DEFAULT_HORIZONTAL_SCROLL_STEP
+        set(value) {
+            state.horizontalScrollStep = value
+        }
+
     class SettingsState : BaseState() {
         var scrollStep by property(DEFAULT_SCROLL_STEP)
+        var horizontalScrollStep by property(DEFAULT_HORIZONTAL_SCROLL_STEP)
     }
 
     private companion object {
         const val DEFAULT_SCROLL_STEP = 3
+        const val DEFAULT_HORIZONTAL_SCROLL_STEP = 10
     }
 }
