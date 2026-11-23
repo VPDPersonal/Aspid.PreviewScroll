@@ -25,28 +25,16 @@ To preview files as you move through the tree, open the project tree’s options
 
 ## Shortcuts
 
-| Direction | macOS | Windows | Scroll distance |
+| Action in Keymap | macOS | Windows | Scroll distance |
 | --- | --- | --- | --- |
-| Up | <kbd>⌘ ⌥ ⇧ ↑</kbd> | <kbd>Ctrl + Alt + Shift + ↑</kbd> | 3 lines |
-| Down | <kbd>⌘ ⌥ ⇧ ↓</kbd> | <kbd>Ctrl + Alt + Shift + ↓</kbd> | 3 lines |
-| Left | <kbd>⌘ ⌥ ⇧ ←</kbd> | <kbd>Ctrl + Alt + Shift + ←</kbd> | 3 space widths |
-| Right | <kbd>⌘ ⌥ ⇧ →</kbd> | <kbd>Ctrl + Alt + Shift + →</kbd> | 3 space widths |
-| Page up | <kbd>⌘ ⌥ ⇧ Page Up</kbd> | <kbd>Ctrl + Alt + Shift + Page Up</kbd> | One screen, one line of overlap |
-| Page down | <kbd>⌘ ⌥ ⇧ Page Down</kbd> | <kbd>Ctrl + Alt + Shift + Page Down</kbd> | One screen, one line of overlap |
+| Scroll Preview Up | <kbd>⌘ ⌥ ⇧ ↑</kbd> | <kbd>Ctrl + Alt + Shift + ↑</kbd> | 3 lines |
+| Scroll Preview Down | <kbd>⌘ ⌥ ⇧ ↓</kbd> | <kbd>Ctrl + Alt + Shift + ↓</kbd> | 3 lines |
+| Scroll Preview Left | <kbd>⌘ ⌥ ⇧ ←</kbd> | <kbd>Ctrl + Alt + Shift + ←</kbd> | 3 space widths |
+| Scroll Preview Right | <kbd>⌘ ⌥ ⇧ →</kbd> | <kbd>Ctrl + Alt + Shift + →</kbd> | 3 space widths |
+| Scroll Preview Page Up | <kbd>⌘ ⌥ ⇧ Page Up</kbd> | <kbd>Ctrl + Alt + Shift + Page Up</kbd> | One screen, one line of overlap |
+| Scroll Preview Page Down | <kbd>⌘ ⌥ ⇧ Page Down</kbd> | <kbd>Ctrl + Alt + Shift + Page Down</kbd> | One screen, one line of overlap |
 
-<details>
-<summary>Change a shortcut or resolve a conflict</summary>
-
-Open <b>Settings → Keymap → Plugins → Aspid.Preview.Scroll</b>. Right-click a scroll action and choose <b>Add Keyboard Shortcut</b>. The IDE shows other actions using the same keys. In Rider’s default Windows keymap, the four arrow shortcuts also resize the active tool window. If the panel resizes when you try to scroll, search for the shortcut in Keymap and reassign the conflicting resize action.
-
-</details>
-
-<details>
-<summary>Which editor scrolls?</summary>
-
-The plugin uses the open editor for the selected file. If that file has no open text editor, it uses the focused editor, then the currently selected editor. The actions consume their keystrokes even when there is nothing to scroll, to avoid the macOS system beep.
-
-</details>
+Rebind these actions in **Settings → Keymap → Plugins → Aspid.Preview.Scroll**.
 
 ## Help and support
 
