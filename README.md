@@ -25,19 +25,19 @@ To preview files as you move through the tree, open the project tree’s options
 
 ## Shortcuts
 
-| Direction | macOS | Windows (Num Lock on) | Scroll distance |
+| Direction | macOS | Windows | Scroll distance |
 | --- | --- | --- | --- |
-| Up | <kbd>⌘ ⌥ ⇧ ↑</kbd> | <kbd>Ctrl + Alt + Numpad 8</kbd> | 3 lines |
-| Down | <kbd>⌘ ⌥ ⇧ ↓</kbd> | <kbd>Ctrl + Alt + Numpad 2</kbd> | 3 lines |
-| Left | <kbd>⌘ ⌥ ⇧ ←</kbd> | <kbd>Ctrl + Alt + Numpad 4</kbd> | 3 space widths |
-| Right | <kbd>⌘ ⌥ ⇧ →</kbd> | <kbd>Ctrl + Alt + Numpad 6</kbd> | 3 space widths |
-| Page up | <kbd>⌘ ⌥ ⇧ Page Up</kbd> | <kbd>Ctrl + Alt + Numpad 9</kbd> | One screen, one line of overlap |
-| Page down | <kbd>⌘ ⌥ ⇧ Page Down</kbd> | <kbd>Ctrl + Alt + Numpad 3</kbd> | One screen, one line of overlap |
+| Up | <kbd>⌘ ⌥ ⇧ ↑</kbd> | <kbd>Ctrl + Alt + Shift + ↑</kbd> | 3 lines |
+| Down | <kbd>⌘ ⌥ ⇧ ↓</kbd> | <kbd>Ctrl + Alt + Shift + ↓</kbd> | 3 lines |
+| Left | <kbd>⌘ ⌥ ⇧ ←</kbd> | <kbd>Ctrl + Alt + Shift + ←</kbd> | 3 space widths |
+| Right | <kbd>⌘ ⌥ ⇧ →</kbd> | <kbd>Ctrl + Alt + Shift + →</kbd> | 3 space widths |
+| Page up | <kbd>⌘ ⌥ ⇧ Page Up</kbd> | <kbd>Ctrl + Alt + Shift + Page Up</kbd> | One screen, one line of overlap |
+| Page down | <kbd>⌘ ⌥ ⇧ Page Down</kbd> | <kbd>Ctrl + Alt + Shift + Page Down</kbd> | One screen, one line of overlap |
 
 <details>
 <summary>Change a shortcut or resolve a conflict</summary>
 
-Open <b>Settings → Keymap → Plugins → Aspid.Preview.Scroll</b>. Right-click a scroll action and choose <b>Add Keyboard Shortcut</b>. The IDE shows other actions using the same keys. You can also use this to choose keys on a keyboard without a numeric keypad.
+Open <b>Settings → Keymap → Plugins → Aspid.Preview.Scroll</b>. Right-click a scroll action and choose <b>Add Keyboard Shortcut</b>. The IDE shows other actions using the same keys. In Rider’s default Windows keymap, the four arrow shortcuts also resize the active tool window. If the panel resizes when you try to scroll, search for the shortcut in Keymap and reassign the conflicting resize action.
 
 </details>
 

@@ -17,7 +17,7 @@
                 class="com.aspid.previewscroll.ScrollPreviewDownAction"
                 text="Scroll Preview Down"
                 description="Scrolls the editor of the selected file down without leaving the tree">
-            <keyboard-shortcut keymap="$default" first-keystroke="control alt NUMPAD2"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt shift DOWN"/>
             <keyboard-shortcut keymap="Mac OS X" first-keystroke="meta alt shift DOWN" replace-all="true"/>
             <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta alt shift DOWN" replace-all="true"/>
         </action>
@@ -26,7 +26,7 @@
                 class="com.aspid.previewscroll.ScrollPreviewUpAction"
                 text="Scroll Preview Up"
                 description="Scrolls the editor of the selected file up without leaving the tree">
-            <keyboard-shortcut keymap="$default" first-keystroke="control alt NUMPAD8"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt shift UP"/>
             <keyboard-shortcut keymap="Mac OS X" first-keystroke="meta alt shift UP" replace-all="true"/>
             <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta alt shift UP" replace-all="true"/>
         </action>
@@ -35,7 +35,7 @@
                 class="com.aspid.previewscroll.ScrollPreviewLeftAction"
                 text="Scroll Preview Left"
                 description="Scrolls the editor of the selected file left without leaving the tree">
-            <keyboard-shortcut keymap="$default" first-keystroke="control alt NUMPAD4"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt shift LEFT"/>
             <keyboard-shortcut keymap="Mac OS X" first-keystroke="meta alt shift LEFT" replace-all="true"/>
             <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta alt shift LEFT" replace-all="true"/>
         </action>
@@ -44,7 +44,7 @@
                 class="com.aspid.previewscroll.ScrollPreviewRightAction"
                 text="Scroll Preview Right"
                 description="Scrolls the editor of the selected file right without leaving the tree">
-            <keyboard-shortcut keymap="$default" first-keystroke="control alt NUMPAD6"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt shift RIGHT"/>
             <keyboard-shortcut keymap="Mac OS X" first-keystroke="meta alt shift RIGHT" replace-all="true"/>
             <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta alt shift RIGHT" replace-all="true"/>
         </action>
@@ -53,7 +53,7 @@
                 class="com.aspid.previewscroll.ScrollPreviewPageDownAction"
                 text="Scroll Preview Page Down"
                 description="Scrolls the editor of the selected file one page down without leaving the tree">
-            <keyboard-shortcut keymap="$default" first-keystroke="control alt NUMPAD3"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt shift PAGE_DOWN"/>
             <keyboard-shortcut keymap="Mac OS X" first-keystroke="meta alt shift PAGE_DOWN" replace-all="true"/>
             <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta alt shift PAGE_DOWN" replace-all="true"/>
         </action>
@@ -62,7 +62,7 @@
                 class="com.aspid.previewscroll.ScrollPreviewPageUpAction"
                 text="Scroll Preview Page Up"
                 description="Scrolls the editor of the selected file one page up without leaving the tree">
-            <keyboard-shortcut keymap="$default" first-keystroke="control alt NUMPAD9"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt shift PAGE_UP"/>
             <keyboard-shortcut keymap="Mac OS X" first-keystroke="meta alt shift PAGE_UP" replace-all="true"/>
             <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta alt shift PAGE_UP" replace-all="true"/>
         </action>
