@@ -3,7 +3,7 @@
   <img src="docs/images/banner.png" alt="Aspid.Preview.Scroll — Keyboard scrolling from the project tree" width="100%" />
 </picture>
 
-[![JetBrains IDEs on the IntelliJ Platform](docs/images/platform.svg)](#compatibility)
+[![Plugin for JetBrains IDEs](docs/images/platform.svg)](#compatibility)
 [![Plugin version: 0.2.0](docs/images/version.svg)](build.gradle.kts)
 
 When you browse files with the arrow keys in the **Project** tool window (**Explorer** in Rider), a file may be longer than the editor window, or a line may run past its right edge. If you switch to the editor to scroll, you then have to switch back to the tree to select the next file.
