@@ -1,17 +1,5 @@
 # Contributing to Aspid.PreviewScroll
 
-## Set up
-
-Install JDK 21 and JetBrains Rider. The Gradle build uses a local Rider installation. Pass its path with `-PriderHome`.
-On macOS, point it to the `Contents` directory inside `Rider.app`. On Windows and Linux, use the Rider installation directory.
-
-```sh
-./gradlew -PriderHome="/path/to/Rider.app/Contents" buildPlugin
-```
-
-On Windows, use `gradlew.bat`. The plugin ZIP is written to `build/distributions/`.
-To launch a sandbox IDE with the plugin installed, run `runIde` with the same `riderHome` argument.
-
 ## Code
 
 - Keep new IntelliJ Platform API calls compatible with the minimum build in [build.gradle.kts](../build.gradle.kts).
