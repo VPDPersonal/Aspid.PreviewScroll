@@ -18,7 +18,10 @@ dependencies {
     intellijPlatform {
         val riderHome = providers.gradleProperty("riderHome").orNull
         if (riderHome == null) {
-            rider("2026.3")
+            rider("2026.3") {
+                useInstaller = false
+            }
+            jetbrainsRuntime()
         } else {
             local(riderHome)
         }
