@@ -12,9 +12,12 @@ When you browse files with the arrow keys in Rider’s **Explorer**, a file may 
 
 ## Installation
 
-1. Build the plugin ZIP using the [build instructions](#build-from-source).
-2. In Rider, open **Settings → Plugins → ⚙ → Install Plugin from Disk…** and select the ZIP from `build/distributions/`.
-3. In **Explorer → ⋮ → Behavior**, turn on **Enable Preview Tab** to open a preview as you move between files. You can also scroll files that are already open in regular tabs.
+The first release is pending. Once published, you can install the plugin either way:
+
+- **[JetBrains Marketplace](https://plugins.jetbrains.com/search?search=Aspid.Preview.Scroll)** — in Rider, open **Settings → Plugins → Marketplace**, search for **Aspid.Preview.Scroll**, and select **Install**.
+- **[GitHub Releases](https://github.com/VPDPersonal/Aspid.Preview.Scroll/releases)** — download the plugin ZIP from the release assets. In Rider, open **Settings → Plugins → ⚙ → Install Plugin from Disk…** and select the ZIP.
+
+To preview files as you move through the tree, enable **Explorer → ⋮ → Behavior → Enable Preview Tab**. You can also scroll files already open in regular tabs.
 
 ## Shortcuts
 
@@ -40,7 +43,10 @@ The plugin uses the open editor for the selected file. If that file has no open 
 
 </details>
 
-## Build from source
+## Development
+
+<details>
+<summary>Build and test your own changes</summary>
 
 Use **JDK 21** and a local Rider installation. Pass the Rider installation directory to Gradle (on macOS, use the app’s <code>Contents</code> directory).
 
@@ -49,6 +55,8 @@ Use **JDK 21** and a local Rider installation. Pass the Rider installation direc
 ```
 
 On Windows, use <code>gradlew.bat</code> and the directory containing Rider’s <code>bin</code> folder. The ZIP is written to <code>build/distributions/</code>. To try the plugin in a sandboxed Rider instance, run the same command with <code>runIde</code> in place of <code>buildPlugin</code>.
+
+</details>
 
 ## Resources
 
