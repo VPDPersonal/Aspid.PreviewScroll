@@ -17,9 +17,9 @@ Requires **2026.3** or later (IntelliJ Platform build **263**). Verified with **
 
 ## Installation
 
-Download the [Aspid.PreviewScroll 0.2.0 ZIP](https://github.com/VPDPersonal/Aspid.PreviewScroll/releases/download/v0.2.0/previewscroll-0.2.0.zip). In your IDE, open **Settings → Plugins → ⚙ → Install Plugin from Disk…** and select the ZIP.
+In your IDE, open **Settings → Plugins → Marketplace**, search for [Aspid.PreviewScroll](https://plugins.jetbrains.com/plugin/36414-aspid-previewscroll), and click **Install**.
 
-The first release is under review on [JetBrains Marketplace](https://plugins.jetbrains.com/search?search=Aspid.PreviewScroll).
+To install from disk, download the [Aspid.PreviewScroll 0.2.0 ZIP](https://github.com/VPDPersonal/Aspid.PreviewScroll/releases/download/v0.2.0/previewscroll-0.2.0.zip), then select it under **Settings → Plugins → ⚙ → Install Plugin from Disk…**.
 
 ## Shortcuts
 
